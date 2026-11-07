@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- CV/job analysis and optimized-CV generation live in pure functions in src/lib/analyzer.ts (no backend/AI), tested in src/test/analyzer.test.ts — keeps scoring rules verifiable.
