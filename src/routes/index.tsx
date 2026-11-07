@@ -165,7 +165,7 @@ function Index() {
               icon={<Briefcase className="h-5 w-5" />}
               title="Descrição da vaga"
               value={job}
-              error={errors.job}
+              error={!!errors.job}
               onChange={(v) => { setJob(v); if (v.trim()) setErrors((e) => ({ ...e, job: false })); }}
               placeholder="Cole aqui a descrição da vaga, incluindo requisitos, responsabilidades e competências..."
             />
@@ -173,7 +173,7 @@ function Index() {
               icon={<FileText className="h-5 w-5" />}
               title="O meu currículo"
               value={cv}
-              error={errors.cv}
+              error={!!errors.cv}
               onChange={(v) => { setCv(v); if (v.trim()) setErrors((e) => ({ ...e, cv: false })); }}
               placeholder="Cole aqui o seu currículo, incluindo experiência profissional, formação e competências..."
             />

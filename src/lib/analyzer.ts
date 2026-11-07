@@ -261,7 +261,7 @@ export function generateCV(cv: string, job: string, analysis: Analysis): Optimiz
   });
 
   // Profile: rewritten only from facts present in the CV
-  const jobTitle = job.split("\n").map((l) => l.trim()).find(Boolean)?.split(/[—–-]/)[0].trim();
+  const jobTitle = job.split("\n").map((l) => l.trim()).find(Boolean)?.split(/[—–-]/)[0]?.trim();
   const base = summary.map(polish).join(" ");
   const highlights = analysis.found.slice(0, 4).join(", ");
   out.profile = [
