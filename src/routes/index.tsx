@@ -288,7 +288,7 @@ function Index() {
       </main>
 
       <footer className="mx-auto max-w-6xl px-4 py-14">
-        <div className="mx-auto flex max-w-3xl items-start gap3 gap-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground">
+        <div className="mx-auto flex max-w-3xl items-start gap-3 rounded-2xl border bg-card p-5 text-sm text-muted-foreground">
           <ShieldCheck className="h-5 w-5 shrink-0 text-sky-strong" />
           <p>A CareerMatch AI ajuda a melhorar a apresentação das suas qualificações, mas nunca inventa experiências, competências ou certificações. Reveja sempre o currículo antes de o enviar.</p>
         </div>
